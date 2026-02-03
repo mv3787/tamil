@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Sandra 💖</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        .card {
+    background: rgba(255, 255, 255, 0.2);
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 40px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+        .mem-btn {
+    margin-top: 20px;
+    background: #ff4b7d;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.mem-btn:hover {
+    background: #ff2f68;
+    transform: scale(1.05);
+}
+
+
+.gallery {
+    display: none;
+    margin-top: 25px;
+}
+
+
+.gallery img {
+    width: 180px;        
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>🎂 Happy Birthday Sandra P 🎂</h1>
+    <h2>You are my favorite person 💕</h2>
+
+    <div class="card">
+        <p>
+            Today is special because <b>you</b> were born 🌸 <br><br>
+            Your smile makes my heart happy,  
+            your presence makes my life brighter ✨ <br><br>
+            I hope this year brings you  
+            love, success, laughter, and endless happiness 💖 <br><br>
+            Always stay the amazing person you are 💐
+        </p>
+
+        <div class="heart">❤️</div>
+        <button class="mem-btn" onclick="toggleGallery()">
+         💝 View Our Memories
+        </button>
+
+        
+        <div id="gallery" class="gallery">
+           <img src="images/san1_(1).jpeg">
+           <img src="/images/san2.jpeg">
+           <img src="/images/san3.jpeg">
+        </div>
+           
+        
+       
+       
+
+
+    </div>
+
+    <footer>
+        Made with love by Mohan 💌
+    </footer>
+
+    <script>
+function toggleGallery() {
+    const gallery = document.getElementById("gallery");
+    gallery.style.display =
+        gallery.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
